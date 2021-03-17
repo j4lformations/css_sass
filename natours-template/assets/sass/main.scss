@@ -54,9 +54,12 @@ body {
     //Pour le centrage avec exc=actitude
     transform: translate(-50%, -50%);
 
+    text-align: center; //Pour le centrage du bouton
+
     .heading-primary {
       color: #fff;
       text-transform: uppercase;
+      //backface-visibility: hidden;
 
       &-main {
         display: block;
@@ -78,6 +81,8 @@ body {
         animation-name: moveInRight;
         animation-duration: 2s;
         //animation-delay: 3s;
+
+        margin-bottom: 25px;
       }
     }
   }
@@ -119,4 +124,52 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn {
+
+  //: pour les pseudos classes
+  &:link, &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+
+    //positionnement du after
+    //position: relative;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+
+  //:: pour les pseudos elements
+  //&::after {
+  //  content: "";
+  //  display: inline-block;
+  //  height: 100%;
+  //  width: 100%;
+  //  border-radius: 100px;
+  //
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //}
+}
+
+.btn-white {
+  background-color: #fff;
+
+  //:: pour les pseudos elements
+  //&::after{
+  //  background-color: #fff;
+  //}
 }
