@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -12,9 +13,48 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: 1rem;
-  font-family: Verdana, Arial, helvetica;
-  color: #212121;
+  font-family: "Lato", sans-serif;
 }
 
-/*# sourceMappingURL=main.css.map */
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #ba68c8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1 1 auto;
+}
+
+.header-box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.header-box__logo {
+  text-align: center;
+  padding: 2rem;
+}
+.header-box__nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(#29b6f6, #0277bd);
+}
+.header-box__nav a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+}
+.header-box__nav a:hover {
+  background-color: #b3e5fc;
+  color: #01579b;
+  transform: translateY(-3px);
+}
+.header-box__nav a:active {
+  transform: translateY(0);
+}
