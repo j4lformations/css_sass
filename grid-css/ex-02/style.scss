@@ -1,0 +1,33 @@
+#conteneur {
+  display: grid;
+  gap: 5px;
+  width: 90%;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
+  }
+}
+
+header, footer {
+  background-color: #eee;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+aside {
+  background-color: #bbb;
+}
+
+header, main, aside, footer {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+p {
+  margin: 0 0 20px 0;
+}

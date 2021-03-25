@@ -40,7 +40,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 0.6vw;
   font-weight: 700;
   text-transform: uppercase;
   background-image: linear-gradient(#4fc3f7, #0277bd);
@@ -108,4 +108,10 @@ body {
 .header-box .header-box__carousel--text .btn:active {
   transform: translateY(0);
   box-shadow: 0 0.5rem 1rem #424242;
+}
+
+@media (max-width: 1250px) {
+  .header-box__nav {
+    display: none;
+  }
 }
